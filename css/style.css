@@ -5,40 +5,54 @@
 
 
 /* -----------------HEADER RULE----------------- */
+.header-container{
+    height: 60px;
+}
 
-
+.logo-mobile{
+    width: 50px;
+}
 /* -----------------MAIN RULE------------------- */
-
+.my-container{
+    height: calc(100vh - 60px);
+}
+.nav-bar-container{
+    height: 100%;
+}
+.main-container{
+    height: 100%;
+    overflow-y: auto;
+}
+/*NAV BAR*/
+nav ul li{
+    list-style: none;
+}
 
 /* -----------------FOOTER RULE----------------- */
 
 
 
 /* -----------------MEDIA QUERY----------------- */
-/* IN MOBILE FIRST */
-
-@media screen and (max-width: 576px) {
-
-}
-@media screen and (max-width: 768px) {
-
-}
-@media screen and (max-width: 992px) {
-
-}
 
 /* IN DEKSTOP FIRST */
 @media screen and (min-width: 992px) {
-
+    .my-min-width{
+        min-width: 140px;
+    }
 }
 @media screen and (min-width: 768px) {
-
+   
 }
 @media screen and (min-width: 576px) {
 
 }
 
 /* -----------------DEBUG----------------- */
-.debug .container {
-    border: 1px dashed red;
-}
+
+/* .debug .col-auto{
+    border: 1px dashed green;  
+} */
+
+/* .debug .row > * {
+    border: 1px dashed green; 
+} */
