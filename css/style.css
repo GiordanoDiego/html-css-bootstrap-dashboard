@@ -56,12 +56,28 @@ table tbody td:first-child::before {
     line-height: 20px;
     display: inline-block;
 }
+
+tr th:nth-child(4),
+tr td:nth-child(4){
+    text-align: center;    
+}
  
 tr th:nth-child(2),
 tr td:nth-child(2),
 tr th:nth-child(3),
 tr td:nth-child(3){
     display: none;
+}
+
+.my-font-small{
+    font-size: x-small;
+}
+
+.my-background-dark-blue{
+    background-color: #173b7d;
+}
+.offcanvas.offcanvas-end{
+    width: 100%;
 }
 
 /* -----------------FOOTER RULE----------------- */
@@ -79,6 +95,10 @@ tr td:nth-child(3){
     tr th:nth-child(2),
     tr td:nth-child(2){
     display: table-cell;
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 50%;
     }
 }
 @media screen and (min-width: 768px) {
