@@ -2,7 +2,9 @@
 
 
 /* -----------------GENERAL RULE----------------- */
-
+:root{
+    --bs-accordion-border-radius: 0px;
+}
 
 /* -----------------HEADER RULE----------------- */
 .header-container{
@@ -11,6 +13,13 @@
 
 .logo-mobile{
     width: 50px;
+}
+
+
+header .col-2 .my-dropdown button{
+    padding: 0;
+    background-color: white;
+    border: none;
 }
 /* -----------------MAIN RULE------------------- */
 .my-container{
@@ -27,6 +36,34 @@
 nav ul li{
     list-style: none;
 }
+.my-border-radius{
+    border-radius: 50%;
+}
+
+.card .my-border-radius{
+    border-radius: 0;
+}
+
+.card .my-border-radius > *{
+    border-radius: 0;
+}
+
+table tbody td:first-child::before {
+    content: "</>";
+    background-color: orangered;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+}
+ 
+tr th:nth-child(2),
+tr td:nth-child(2),
+tr th:nth-child(3),
+tr td:nth-child(3){
+    display: none;
+}
 
 /* -----------------FOOTER RULE----------------- */
 
@@ -39,9 +76,17 @@ nav ul li{
     .my-min-width{
         min-width: 140px;
     }
+
+    tr th:nth-child(2),
+    tr td:nth-child(2){
+    display: table-cell;
+    }
 }
 @media screen and (min-width: 768px) {
-   
+    tr th:nth-child(3),
+    tr td:nth-child(3){
+    display: table-cell;
+    }
 }
 @media screen and (min-width: 576px) {
 
