@@ -80,6 +80,11 @@ tr td:nth-child(3){
     width: 100%;
 }
 
+nav ul li a:hover{
+    z-index: 1;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
 /* -----------------FOOTER RULE----------------- */
 
 
