@@ -31,7 +31,7 @@ header .col-2 .my-dropdown button{
 }
 /*NAV BAR*/
 .background-grad {
-  background: linear-gradient(40deg, #092a4a 80%, #041830 20%);
+  background: linear-gradient(40deg, #092a4a 75%, #041830 25%);
   }
 
 nav ul li{
@@ -62,6 +62,7 @@ table tbody td:first-child::before {
     display: inline-block;
 }
 
+
 tr th:nth-child(4),
 tr td:nth-child(4){
     text-align: center;    
@@ -72,6 +73,10 @@ tr td:nth-child(2),
 tr th:nth-child(3),
 tr td:nth-child(3){
     display: none;
+}
+
+.my-w-35{
+    width: 35%;
 }
 
 .my-font-small{
@@ -106,15 +111,16 @@ nav ul li a:hover{
     tr td:nth-child(2){
     display: table-cell;
     }
+    .offcanvas.offcanvas-end{
+        width: 50%;
+    }
 }
 @media screen and (min-width: 768px) {
     tr th:nth-child(3),
     tr td:nth-child(3){
     display: table-cell;
     }
-    .offcanvas.offcanvas-end{
-        width: 50%;
-    }
+   
 }
 @media screen and (min-width: 576px) {
 
